@@ -1,0 +1,28 @@
+<br>
+<h3>Name is <b>{{objdata.name}}</b> and Mark is {{objdata.mark}}</h3>
+<br>
+<br>
+
+<table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Mark</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of listarray">
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.mark}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<input type="form-control" #name>
+<br>
+<br>
+<a href="#" class="btn btn-primary"  (click)="dataupdateevent.emit(name.value)" >Click</a>
+
+<br>
+<br>
+<h2>Welcome To {{channelname}}</h2>
